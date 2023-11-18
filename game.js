@@ -51,8 +51,6 @@ function updateEmoji() {
 }
 
 function buyUpgrade(upgradeId) {
-    const selectedUpgrade = confirm(`Do you want to buy ${upgrades[upgradeId].description}`);
-    if (selectedUpgrade) {
         const upgrade = upgrades[upgradeId];
         const cost = calculateUpgradeCost(upgrade);
 
