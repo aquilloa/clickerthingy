@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    background-color: #111; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cookieContainer {
+    position: relative;
+    display: inline-block;
+}
+
+#cookie {
+    font-size: 100px;
+    cursor: pointer;
+    user-select: none; /* Disable text selection */
+}
+
+.floatingEmoji {
+    position: absolute;
+    animation: floatAnimation 2s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+#emojiLabel,
+#clickRateLabel {
+    font-size: 20px;
+}
+
+#upgradeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.upgrade {
+    border: 2px solid #fff; /* White border for each upgrade rectangle */
+    border-radius: 5px; /* Rounded corners for upgrade rectangles */
+    padding: 10px; /* Padding inside each upgrade rectangle */
+    margin-bottom: 10px; /* Spacing between upgrade rectangles */
+    background-color: #333; /* Dark background color for upgrade rectangles */
+}
+
+.upgradeDescription {
+    font-size: 12px;
+    margin-top: 5px; /* Spacing between upgrade description and other elements */
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+}
